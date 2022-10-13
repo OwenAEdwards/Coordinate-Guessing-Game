@@ -22,8 +22,6 @@ def make_direction(secret_location):
         response=["Guess again, go"]
         # NOTE: we let the secret_location[y]==guess[y] and
         # secret_location[x]==guess[x] cases fall through
-        print(secret_location[x],secret_location[y])
-        print(guess[x],guess[y])
         if (secret_location[y]>guess[y]):
             response.append("north")
         elif (secret_location[y]<guess[y]):
